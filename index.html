@@ -102,8 +102,8 @@
     @media (max-width: 768px) {
       .invitation-image {
         height: 100vh; /* Ensure full height on tablets */
-        object-fit: cover; /* Cover the section while maintaining aspect ratio */
-        object-position: center 75%; /* Shift focus slightly downward to prioritize text visibility */
+        object-fit: contain; /* Fit image without cropping */
+        object-position: center center; /* Center image fully */
       }
       .image-section {
         display: flex;
@@ -128,7 +128,7 @@
         background-color: rgba(255, 255, 255, 0.9); /* Match desktop hover */
         transform: scale(1.05); /* Match desktop hover */
       }
-      .countdown .digits {
+      .countdown . Digits {
         font-size: 2rem;
       }
       .countdown .colon {
@@ -147,8 +147,8 @@
     @media (max-width: 480px) {
       .invitation-image {
         height: 100vh; /* Ensure full height on mobile */
-        object-fit: cover; /* Maintain cover behavior */
-        object-position: center 80%; /* Further adjust downward to ensure text visibility */
+        object-fit: contain; /* Fit image without cropping */
+        object-position: center center; /* Center image fully */
       }
       .image-section {
         display: flex;
@@ -209,7 +209,7 @@
     </div>
     <div class="countdown">
       <div class="time-unit"><span class="digits" id="days">00</span><span class="label">Days</span></div>
-      <span class="colon">:</span>
+      <span class = "colon">:</span>
       <div class="time-unit"><span class="digits" id="hours">00</span><span class="label">Hours</span></div>
       <span class="colon">:</span>
       <div class="time-unit"><span class="digits" id="minutes">00</span><span class="label">Minutes</span></div>
